@@ -20,28 +20,31 @@
 #  terraform-provider-bluefringe = ["2.0.0"]
 
 #  }
+terraform {
+  required_version = "2.0.0"
+}
 
 
 provider_installation {
   network_mirror {
-    url = "https://github.com/lakshmi-suma/test-bluefringe/tree/master/terraform-providers/local/providers/bluefringe/2.0.0"
+    url = "https://github.com/lakshmi-suma/terraform-provider.git"
   #   include = ["${TF_NETWORK_MIRROR_PROVIDER_NAME}"]
   }
 }
   
 
-terraform {
-    
-  required_providers {
-    bluefringe = {
-      # source = "https://github.com/lakshmi-suma/test-bluefringe/tree/master/terraform-providers/local/providers/bluefringe/2.0.0"
-      source  = "local/providers/bluefringe"#local/providers/bluefringe
-      version = "2.0.0"
-    }
-    # add other providers here
-  }
-#   required_version = ">= 0.13"
-}
+# terraform {
+#     required_version = "2.0.0"
+#   # required_providers {
+#   #   bluefringe = {
+#   #     # source = "https://github.com/lakshmi-suma/test-bluefringe/tree/master/terraform-providers/local/providers/bluefringe/2.0.0"
+#   #     source  = "local/providers/bluefringe"#local/providers/bluefringe
+#   #     version = "2.0.0"
+#   #   }
+#   #   # add other providers here
+#   # }
+# #   required_version = ">= 0.13"
+# }
 
 # provider "bluefringe" {
 #     username = var.bluefringe_username
