@@ -21,11 +21,16 @@
 
 #  }
 
-
+terraform{
+  required_providers {
+    
+  
 provider_installation {
   network_mirror {
     url = "https://github.com/lakshmi-suma/test-bluefringe/tree/master/terraform-providers/local/providers/bluefringe/2.0.0"
   #   include = ["${TF_NETWORK_MIRROR_PROVIDER_NAME}"]
+  }
+}
   }
 }
   
