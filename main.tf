@@ -37,7 +37,7 @@ terraform {
     # required_version = "2.0.0"
   required_providers {
     bluefringe = {
-      source = "github/lakshmi-suma/terraform-provider"
+      source = "github/lakshmi-suma/bluefringe"
       # source = "https://github.com/lakshmi-suma/test-bluefringe/tree/master/terraform-providers/local/providers/bluefringe/2.0.0"
       # source  = "local/providers/bluefringe"#local/providers/bluefringe
       version = "2.0.0"
